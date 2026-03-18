@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aitist × AI Event</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0f;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .badge {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff 40%, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle {
+    color: #888;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .photo-frame {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08);
+  }
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.7));
+    z-index: 1;
+    pointer-events: none;
+  }
+  .photo-frame img {
+    width: 100%;
+    display: block;
+  }
+  .photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 24px;
+  }
+  .photo-caption p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .footer {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #444;
+    font-size: 0.85rem;
+  }
+  .footer a {
+    color: #ff6b35;
+    text-decoration: none;
+  }
+  .dot { color: #333; }
+</style>
+</head>
+<body>
+  <div class="badge">✦ Aitist</div>
+  <h1>Building the Future<br>of AI</h1>
+  <p class="subtitle">Networking with the brightest minds in Silicon Valley</p>
+
+  <div class="photo-frame">
+    <img src="photo.jpg" alt="Aitist AI Event">
+    <div class="photo-caption">
+      <p>📍 Silicon Valley AI Networking Event, 2026</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Powered by</span>
+    <a href="https://aitist.ai">aitist.ai</a>
+    <span class="dot">·</span>
+    <span>Built with AI in 60s</span>
+  </div>
+</body>
+</html>
