@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feng Tao — CTO, Aitist</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #06060a;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+  }
+
+  .company {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ff6b35;
+    margin-bottom: 48px;
+  }
+
+  .card {
+    max-width: 680px;
+    width: 100%;
+    background: #0f0f18;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+  }
+
+  .photo-section {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+  }
+
+  .photo-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+  }
+
+  .photo-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(transparent, #0f0f18);
+  }
+
+  .role-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    z-index: 2;
+  }
+
+  .info {
+    padding: 0 36px 36px;
+    position: relative;
+    margin-top: -60px;
+    z-index: 2;
+  }
+
+  .name {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 1rem;
+    color: #ff6b35;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .divider {
+    height: 1px;
+    background: rgba(255,255,255,0.07);
+    margin-bottom: 24px;
+  }
+
+  .bio {
+    color: #888;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 32px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .tag {
+    background: rgba(255,107,53,0.12);
+    border: 1px solid rgba(255,107,53,0.25);
+    color: #ff8c5a;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .stat {
+    background: #0f0f18;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .stat-n {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-l {
+    font-size: 0.72rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-note {
+    margin-top: 48px;
+    color: #2a2a2a;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+  }
+
+  .footer-note span { color: #ff6b35; }
+</style>
+</head>
+<body>
+  <div class="company">✦ Aitist</div>
+
+  <div class="card">
+    <div class="photo-section">
+      <img src="photo.jpg" alt="Feng Tao">
+      <div class="role-badge">CTO</div>
+    </div>
+    <div class="info">
+      <div class="name">Feng Tao</div>
+      <div class="title">Chief Technology Officer · Aitist</div>
+      <div class="divider"></div>
+      <p class="bio">
+        Feng Tao is the CTO of Aitist, leading the technical vision and architecture behind our AI-powered financial intelligence platform. With deep expertise in large-scale systems and applied AI, Feng drives the engineering culture that turns cutting-edge research into real products — fast.
+      </p>
+      <div class="tags">
+        <span class="tag">AI Infrastructure</span>
+        <span class="tag">LLM Systems</span>
+        <span class="tag">Quantitative Finance</span>
+        <span class="tag">Distributed Systems</span>
+        <span class="tag">Silicon Valley</span>
+      </div>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-n">10+</div>
+          <div class="stat-l">Years Eng</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">3</div>
+          <div class="stat-l">AI Products</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">∞</div>
+          <div class="stat-l">Curiosity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">Powered by <span>aitist.ai</span> · Built with AI in 60s</div>
+</body>
+</html>
