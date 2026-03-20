@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dn.com × Aitist · GTC 2025</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#050508;
+    color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px 80px;
+  }
+  .badge {
+    background:linear-gradient(135deg,#0066ff,#00aaff);
+    color:#fff;
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    padding:6px 18px;
+    border-radius:20px;
+    margin-bottom:24px;
+  }
+  h1 {
+    font-size:clamp(2rem,6vw,3.8rem);
+    font-weight:900;
+    background:linear-gradient(135deg,#fff 30%,#0099ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:8px;
+    text-align:center;
+  }
+  .subtitle { color:#555; font-size:.95rem; margin-bottom:44px; text-align:center; }
+  .container { max-width:680px; width:100%; }
+  .photo-wrap {
+    position:relative;
+    width:100%;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 0 0 1px rgba(0,153,255,.2), 0 40px 120px rgba(0,0,0,.7);
+    margin-bottom:16px;
+  }
+  .photo-wrap img { width:100%; display:block; }
+  .photo-overlay {
+    position:absolute;
+    bottom:0; left:0; right:0;
+    background:linear-gradient(transparent, rgba(0,0,0,.88));
+    padding:32px 28px 24px;
+  }
+  .photo-label { font-size:.7rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#00aaff; margin-bottom:6px; }
+  .photo-title { font-size:1.1rem; font-weight:700; color:#fff; }
+  .chips { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px; }
+  .chip { background:#0f0f18; border:1px solid rgba(255,255,255,.07); border-radius:10px; padding:8px 16px; font-size:.82rem; color:#777; }
+  .chip span { color:#fff; font-weight:600; }
+  .card {
+    background:#0c0c14;
+    border:1px solid rgba(0,153,255,.12);
+    border-radius:20px;
+    padding:28px;
+    margin-bottom:16px;
+  }
+  .card-label { font-size:.68rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0099ff; margin-bottom:10px; }
+  .card h2 { font-size:1.1rem; font-weight:800; margin-bottom:14px; }
+  .item { display:flex; gap:12px; padding:9px 0; border-bottom:1px solid rgba(255,255,255,.04); }
+  .item:last-child { border-bottom:none; }
+  .dot { color:#0099ff; flex-shrink:0; margin-top:2px; }
+  .item-text { color:#aaa; font-size:.92rem; line-height:1.6; }
+  .item-text strong { color:#fff; }
+  .quote {
+    background:linear-gradient(135deg,rgba(0,153,255,.08),rgba(0,153,255,.03));
+    border-left:3px solid #0099ff;
+    border-radius:0 12px 12px 0;
+    padding:16px 20px;
+    color:#bbb;
+    font-size:.95rem;
+    line-height:1.7;
+    font-style:italic;
+    margin-top:4px;
+  }
+  footer { margin-top:48px; color:#222; font-size:.75rem; }
+  footer em { color:#0099ff; font-style:normal; }
+</style>
+</head>
+<body>
+  <div class="badge">✦ GTC 2025 · Outdoor Dinner</div>
+  <h1>dn.com × Aitist</h1>
+  <p class="subtitle">Caught up at the GTC Seafood BBQ · San Jose · March 2025</p>
+
+  <div class="container">
+    <div class="photo-wrap">
+      <img src="photo.jpg" alt="With dn.com founder at GTC outdoor dinner">
+      <div class="photo-overlay">
+        <div class="photo-label">🦞 Seamate Outdoor BBQ · GTC</div>
+        <div class="photo-title">With the founder of dn.com over crab and good vibes</div>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip">🌐 <span>dn.com</span></div>
+      <div class="chip">📅 <span>March 2025</span></div>
+      <div class="chip">🦞 <span>GTC Seafood Dinner</span></div>
+      <div class="chip">🤝 <span>Founders</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">💬 The Conversation</div>
+      <h2>Domain Infrastructure × AI Agents</h2>
+      <div class="quote">
+        "Every AI agent needs a home on the internet. Domains aren't just addresses — they're identities."
+      </div>
+      <br>
+      <div class="item"><span class="dot">▸</span><div class="item-text"><strong>Domain as identity:</strong> Bundling domain registration with AI agent deployment</div></div>
+      <div class="item"><span class="dot">▸</span><div class="item-text"><strong>Infrastructure play:</strong> dn.com's registrar backbone + Aitist's agent platform</div></div>
+      <div class="item"><span class="dot">▸</span><div class="item-text"><strong>Next:</strong> Explore deeper integration between platforms</div></div>
+    </div>
+
+  </div>
+
+  <footer>Steve Ouyang · <em>aitist.ai</em> · GTC 2025</footer>
+</body>
+</html>
